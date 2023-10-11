@@ -35,7 +35,7 @@ CREATE TABLE Loans(
 	REFERENCES Borrowers(BorrowerId) ON DELETE CASCADE
 )
 
-CRAETE TABLE AuditLog(
+CREATE TABLE AuditLog(
 BookId INT PRIMARY KEY,
 StatusChange VARCHAR(10) NOT NULL CHECK (StatusChange in ('Available', 'Borrowed')),
 ChangeDate DATE NOT NULL

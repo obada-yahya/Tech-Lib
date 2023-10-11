@@ -1,6 +1,5 @@
 BEGIN TRANSACTION;
 
-
 DBCC CHECKIDENT ('Loans', RESEED, 0)
 
 INSERT INTO Loans([BookId],[BorrowerId],[Date Borrowed],[Due Date],[Date Returned])values(4,133,'2023-08-14','2023-10-27',NULL);
